@@ -1,0 +1,128 @@
+/* For larger devices (min-width 480px and above) */
+@media screen and (min-width: 480px) {
+    .nav-ico {
+      display: none;
+    }
+    
+  
+    .hero {
+      flex-direction: row;
+      align-items: flex-start; /* Aligns text and image horizontally */
+    }
+    .hero-text {
+      margin-top: 150px;
+     
+    }
+    .hero-img img {
+      order: 2;
+      margin-top: 0;
+    }
+    .footer-area{
+      height: 100%;
+      width: 100%;
+      
+    }
+  }
+  /* for tablet */
+  /* For tablet devices (min-width 481px and max-width 768px) */
+@media screen and (min-width: 481px) and (max-width: 992px) {
+  /* Adjust navigation */
+  .nav-menu {
+    display: none;
+  }
+  
+  .nav-ico {
+    display: block;
+  }
+
+  /* Hero section */
+  .hero {
+    margin-top: 20px;
+    flex-direction: column; /* Stacks the text and image vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    order: 2; 
+    margin-top: 20px;
+  }
+
+  .hero-img {
+    order: 1; /* Image appears first */
+    margin-top: 0;
+  }
+  /* Easybank cards - 2 cards per row */
+  .card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .single-card {
+      width: 48%; /* Two cards per row */
+      margin-bottom: 20px; /* Spacing between rows */
+  }
+
+  /* Footer */
+  .footer-area {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+}
+
+
+  @media screen and (max-width: 480px) {
+    .nav-menu {
+      display: none;
+    }
+  
+    .hero {
+      margin-top: 20px;
+      flex-direction: column; 
+      align-items: center;
+      text-align: center;
+    }
+  
+    .hero-text {
+      order: 2; 
+    }
+  
+    .hero-img {
+      order: 1;
+      margin-top: 0;
+    }
+  
+    .card {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .easybank h2 {
+      text-align: center;
+    }
+  
+    .card {
+      text-align: center;
+    }
+  
+    .single-card h3,
+    .fa-solid i,
+    .easybank p,
+    .articles-h2 {
+      text-align: center;
+    }
+  
+    .footer-area {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin: 50px;
+      width: 80%;
+      margin: 50px auto;
+      
+    }
+  }
+  
